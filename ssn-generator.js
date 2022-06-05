@@ -112,4 +112,8 @@ class RandomSSN {
     return generateSsnAgeOneDayOver(years);
   }
 
+  static between(minYears, maxYears) {
+    return generateSsnAgeBetween(minYears, maxYears)
+  }
+
 }

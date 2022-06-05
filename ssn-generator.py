@@ -96,3 +96,7 @@ class RandomSSN:
   @staticmethod
   def barely(years: int) -> str:
     return generate_ssn_age_one_day_over(years)
+
+  @staticmethod
+  def between(min_years: int, max_years: int) -> str:
+    return generate_ssn_age_between(min_years, max_years)
