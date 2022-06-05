@@ -18,7 +18,7 @@ Currently the code features:
 
 ## Missing features
 
-**The sex of the person** is purely random. Adding sex as an optional parameter would allow for greater control over the output. _This feature was omitted due to the fact that the sex of the person should be irrelevant._
+**The sex of the person** is purely random. Adding sex as an optional parameter would allow for greater control over the output. _This feature was omitted due to the fact that the sex of the person should be irrelevant in a business setting._
 
 **The identity number** always lands in the _"normal"_ range, with no opportunity to decide whether it should be in the normal range, the special range, or both.
 
