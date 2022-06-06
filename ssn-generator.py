@@ -84,6 +84,20 @@ def generate_ssn_age_between(min_years: int, max_years: int) -> str:
     return generate_ssn_from_date(d)
 
 
-def generate_ssn_eighteen_to_sixtyfive():
-    d = random_date_from_age_range(18, 121)
-    return generate_ssn_from_date(d)
+class RandomSSN:
+
+    @staticmethod
+    def exactly(years: int) -> str:
+        return generate_ssn_age_exactly(years)
+
+    @staticmethod
+    def almost(years: int) -> str:
+        return generate_ssn_age_one_day_shy_from(years)
+
+    @staticmethod
+    def barely(years: int) -> str:
+        return generate_ssn_age_one_day_over(years)
+
+    @staticmethod
+    def between(min_years: int, max_years: int) -> str:
+        return generate_ssn_age_between(min_years, max_years)
